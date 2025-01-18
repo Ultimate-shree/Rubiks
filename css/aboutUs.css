@@ -1,0 +1,117 @@
+.AboutusContainer{
+  width: 80%;
+  margin: auto;
+}
+.AboutDetails>p{
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.AboutusContainer>h1{
+  text-align: center;
+  font-size: 3rem;
+  color: #C19a6b;
+}
+.AboutDetails{
+  text-align: center;
+  padding: 40px;
+}
+.mission>h2{
+  color: #C19a6b;
+  font-size: 3rem;
+  text-align: center;
+}
+.mission>ul{
+  padding: 40px;
+}
+.mission>ul>li{
+  padding-bottom: 20px;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.details{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: auto;
+  height: 300px;
+  background-color:#d8eaf8;
+}
+.time_section{
+  display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.time_section>i{
+  font-size: 3rem;
+}
+.timeDetail{
+  display: flex;
+  flex-direction: column;
+}
+
+.verticalLine{
+  border-left: 2px solid #2F4156;
+  height: 100px;
+  /* flex: 2; */
+}
+
+
+.honeycomb {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 5px;
+  position: relative;
+}
+
+.honeycomb-item {
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  background-color: #eee;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 1/1; /* Ensures items are hexagonal */
+  transition: transform 0.3s ease-in-out;
+}
+
+.honeycomb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover Effect */
+.honeycomb-item:hover {
+  transform: scale(1.1);
+}
+
+/* Offset Every Second Row */
+.honeycomb-row:nth-child(odd) {
+  margin-left: calc(50% / 3); /* Offset odd rows */
+}
+.otherClubs>h2{
+  color: #C19a6b;
+  font-size: 3rem;
+  text-align: center;
+}
+.clubNames{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.clubs{
+  text-align: center;
+
+}
+.clubs>img{
+  height: 150px;
+}
+.clubs>h3{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.clubs>p{
+  font-size: 1rem;
+}
